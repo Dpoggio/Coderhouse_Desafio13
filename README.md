@@ -1,6 +1,6 @@
-# Usando el objeto Process
+# Servidor con balance de carga
 
-Desafio 12 del curso Backend de Coderhouse
+Desafio 13 del curso Backend de Coderhouse
 
 ## Instalar dependencias
 

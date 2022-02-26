@@ -1,7 +1,7 @@
 {
-  "name": "coderhouse_desafio12",
+  "name": "coderhouse_desafio13",
   "version": "1.0.0",
-  "description": "Usando el objeto Process",
+  "description": "Servidor con balance de carga",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dpoggio/Coderhouse_Desafio12.git"
+    "url": "git+https://github.com/Dpoggio/Coderhouse_Desafio13.git"
   },
   "author": "Demian Poggio",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dpoggio/Coderhouse_Desafio12/issues"
+    "url": "https://github.com/Dpoggio/Coderhouse_Desafio13/issues"
   },
-  "homepage": "https://github.com/Dpoggio/Coderhouse_Desafio12#readme",
+  "homepage": "https://github.com/Dpoggio/Coderhouse_Desafio13#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-mongo": "^4.6.0",
