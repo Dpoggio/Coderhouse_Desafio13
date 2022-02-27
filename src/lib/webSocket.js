@@ -1,8 +1,8 @@
 const Productos = require('../model/productoDaoMongo.js')
 const Mensajes = require('../model/mensajes.js')
 const { normalize, schema } = require("normalizr")
-const { Server: IOServer } = require('socket.io')
-
+const { Server: IOServer } = require('socket.io');
+const Log = require('./log.js')
 
 
 // Normalizr
@@ -38,7 +38,7 @@ function websocket(httpServer){
     }
 
     io.on('connection', async socket => {
-        console.log('Nuevo cliente conectado')
+        Log.info('Nuevo cliente conectado')
     
         socket.emit('actualizarProductos', await productos.getAll())
         socket.emit('actualizarMensajes', await getMensajes())

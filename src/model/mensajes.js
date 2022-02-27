@@ -1,5 +1,5 @@
 const Contenedor = require('../lib/contenedorMongo.js')
-const mongoose = require('../lib/mongoConnected.js')
+const mongoose = require('mongoose')
 
 
 const mensajeSchema = new mongoose.Schema({

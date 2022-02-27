@@ -9,6 +9,13 @@ const args = yargs
         describe: 'Puerto del servidor',
         demandOption: false,
         default: 8080
+      },
+      'modo': {
+        alias: 'm',
+        describe: 'Modo de ejecucion',
+        choices: ["FORK", "CLUSTER"],
+        demandOption: false,
+        default: 'FORK'
       }
     })
     .help()
@@ -17,6 +24,7 @@ const args = yargs
 module.exports = Object.freeze({
     // Misc
     PORT: args.port,
+    MODO: args.modo,
 
     // HTTP
     HTTP_NOT_FOUND: 404,

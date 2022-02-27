@@ -11,6 +11,7 @@ routerInfo.get('/', (req, res) => {
         { desc: "Path de ejecucion", value: process.argv[1] },
         { desc: "Process id", value: process.pid },
         { desc: "Carpeta del proyecto", value: process.cwd() },
+        { desc: "Cantidad de Procesadores", value: require('os').cpus().length },
     ] })
 })
 

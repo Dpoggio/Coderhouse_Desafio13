@@ -1,4 +1,4 @@
-var mongoose = require('../lib/mongoConnected.js');
+var mongoose = require('mongoose');
 
 module.exports = mongoose.model('Users',{
     username: String,
